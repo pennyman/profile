@@ -18,18 +18,6 @@ var utils = {
 
 exports.handler = function(event, context, callback) {
   const BUCKET = event.Records[0].s3.bucket.name;
-  // const key = event.queryStringParameters.key;
-  // const match = key.match(/((\d+)x(\d+))\/(.*)/);
-
-  //Check if requested resolution is allowed
-  // if(0 != ALLOWED_RESOLUTIONS.size && !ALLOWED_RESOLUTIONS.has(match[1]) ) {
-  //   callback(null, {
-  //     statusCode: '403',
-  //     headers: {},
-  //     body: '',
-  //   });
-  //   return;
-  // }
 
   const width = 500;
   const height = 500;
